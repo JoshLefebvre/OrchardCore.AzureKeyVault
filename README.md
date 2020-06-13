@@ -22,7 +22,7 @@ See https://github.com/OrchardCMS/OrchardCore/issues/6359.
     "ClientSecret": "YOUR_CLIENT_SECRET"
 }
 ```
-You should *never check in your client secret into source control* as this defeats the purpose of using a Key Vault in the first place. Instead set your client secret as an environmnet variable on your machine, or create a seperate azurekeyvault.json file and add it to your gitignore.
+You should **never check in your client secret into source control** as this defeats the purpose of using a Key Vault in the first place. Instead set your client secret as an environmnet variable on your machine, or create a seperate azurekeyvault.json file and add it to your gitignore.
 
 **Finally**, add UseOrchardCoreAzureKeyVault() to the Generic Host in CreateHostBuilder() of your program.cs.
 ```csharp
